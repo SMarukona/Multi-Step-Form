@@ -1,0 +1,55 @@
+/* Google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+/*CSS eset*/
+
+*, *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+ul,ol,li{
+	margin: 0;
+    padding: 0;
+}
+
+/*Custom css*/
+
+:root {
+    --font-family-ubuntu: 'Ubuntu', sans-serif;
+    --primary-marine-blue: hsl(213, 96%, 18%);
+    --primary-purplish-blue: hsl(243, 100%, 62%);
+    --primary-pastel-blue: hsl(228, 100%, 84%);
+    --primary-light-blue: hsl(206, 94%, 87%);
+    --primary-strawberry-red: hsl(354, 84%, 57%);
+    --neutral-cool-gray: hsl(231, 11%, 63%);
+    --neutral-light-gray: hsl(229, 24%, 87%);
+    --neutral-magnolia: hsl(217, 100%, 97%);
+    --neutral-alabaster: hsl(231, 100%, 99%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-700: 700;
+    --h3-font-size: 0.875rem;
+    --h2-font-size: 1rem;
+    --h1-font-size: 2rem;
+    --p14-font-size: 0.875rem;
+    --p16-font-size: 1rem;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 74.4rem;
+    
+}
