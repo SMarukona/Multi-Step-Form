@@ -91,6 +91,8 @@ height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: left;
+    margin-bottom: 1.875rem;
+    align-items: center;
 }
 
 .details{
@@ -117,10 +119,6 @@ height: 100%;
 }
 
 /*Side Bar styling*/
-
-.steps{
-    margin-bottom: 1.875rem;
-}
 
 .step-number{
     width: 2.125rem;
@@ -163,4 +161,21 @@ height: 100%;
     color: var(--neutral-white);
     opacity: 0.8;
     padding-bottom: 0.25rem;
+}
+
+/*individual step styling*/
+.individual-steps h1{
+    font-size: var(--h1-font-size);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-weight-700);
+    color: var(--primary-marine-blue);
+    padding-bottom: 1.125rem;
+}
+
+.individual-steps p{
+    font-size: var(--p16-font-size);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-weight-400);
+    color: var(--neutral-cool-gray);
+    padding-bottom: 0.5rem;
 }
