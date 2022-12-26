@@ -123,13 +123,20 @@ height: 100%;
 .step-number{
     width: 2.125rem;
     height: 2.125rem;
-    border: 0.125rem solid var(--neutral-white);
+    border: 0.1rem solid var(--neutral-white);
     border-radius: 100%;
     display: flex;
     flex-direction:row;
     align-items: center;
     justify-content: space-around;
 }
+
+.step-number-active{
+    background-color: var(--neutral-white);
+    color: var(--primary-marine-blue);
+}
+
+
 .step-number a{
     color:var(--neutral-white);
     font-family: var(--font-family-ubuntu);
@@ -178,4 +185,55 @@ height: 100%;
     font-weight: var(--font-weight-400);
     color: var(--neutral-cool-gray);
     padding-bottom: 0.5rem;
+}
+
+.step1 .name, .step1 .email, .step1 .phone{
+    font-size: var(--p16-font-size);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-weight-500);
+    color: var(--primary-marine-blue);
+}
+.step1 .in-name, .step1 .in-email, .step1 .in-phone{
+    font-size: var(--p16-font-size);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-weight-500);
+    color: var(--primary-marine-blue);
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    padding: 1.125rem 1rem 1.125rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.125rem solid var(--neutral-cool-gray);
+    width: 100%;
+    
+}
+
+.step1 .in-name::placeholder, .step1 .in-email::placeholder, .step1 .in-phone::placeholder{
+    color: var(--neutral-cool-gray);
+    font-weight: var(--font-weight-500);
+    font-family: var(--font-family-ubuntu);
+    font-size: var(--p16-font-size);
+}
+
+.step1 .in-name:focus, .step1 .in-email:focus, .step1 .in-phone:focus{
+    color: var(--primary-marine-blue);
+    cursor: pointer;
+    border: 0.125rem solid var(--primary-purplish-blue);
+    outline: var(--primary-purplish-blue);
+}
+
+button{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    color: var(--neutral-white);
+    font-weight: var(--font-weight-500);
+    font-family: var(--font-family-ubuntu);
+    font-size: var(--p16-font-size);
+    background-color: var(--primary-marine-blue);
+    border:none;
+    border-radius: 0.5rem;
+}
+
+button:hover{
+    background-color: var(--primary-marine-blue);
+    opacity: 0.9;
+    cursor: pointer;
 }
