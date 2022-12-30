@@ -487,3 +487,166 @@ input:checked + .slider:before {
 .btn-step3 a:hover{
     color: var(--primary-marine-blue);
 }
+
+/*Step 4 styling*/
+
+.doublecheck-summary{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.package-addon-sum{
+    background-color: #F8F9FE;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top:  2rem;
+}
+.sum-package-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.hr-pack-sum{
+    height: 0.12rem;
+    border-color: var(--neutral-cool-gray);
+    opacity: 0.2;
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+}
+
+.sum-package-type div h2{
+    font-size: var(--h2-font-size);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-weight-700);
+    color: var(--primary-marine-blue);
+    margin-bottom: 0.625rem;
+}
+
+.sum-package-type div a{
+    font-size: var(--p16-font-size) !important;
+    font-weight: var(--font-weight-700) !important;
+    font-family: var(--font-family-ubuntu);
+    color: var(--neutral-cool-gray);
+}
+.sum-package-type div a:hover{
+    color: var(--primary-purplish-blue);
+}
+.sum-package-type div p{
+    font-size: var(--p16-font-size);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-weight-700);
+    color: var(--primary-marine-blue);
+}
+
+.sum-addons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sum-addons div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.sum-addons div:nth-child(2){
+    padding-bottom: 0;
+}
+
+.sum-addons div p{
+    font-size: var(--p16-font-size);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-weight-500);
+    color: var(--neutral-cool-gray);
+    padding-bottom: 0;
+}
+
+.sum-total{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sum-total p{
+    font-size: var(--p16-font-size);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-weight-500);
+    color: var(--neutral-cool-gray);
+    padding-bottom: 0;
+}
+
+.sum-total p:nth-child(2){
+    font-size: 1.2rem;
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-weight-700);
+    color: var(--primary-marine-blue);
+    padding-bottom: 0;
+}
+
+.btn-step4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-step4 button{
+    background-color: var(--primary-purplish-blue);
+}
+
+.btn-step4 button:hover{
+    background-color: var(--primary-purplish-blue);
+    opacity: 0.8;
+}
+
+.btn-step4 a{
+    font-size: var(--p16-font-size) !important;
+    font-weight: var(--font-weight-700) !important;
+    font-family: var(--font-family-ubuntu);
+    color: var(--neutral-cool-gray);
+    cursor: pointer;
+
+}
+
+.btn-step3 a:hover{
+    color: var(--primary-marine-blue);
+    cursor: pointer;
+}
+
+/*Final Step*/
+
+.thankyou-final{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.thankyou-final img{
+    margin-bottom: 2rem;
+}
+.thankyou-final h1{
+    font-size: var(--h1-font-size);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-weight-700);
+    color: var(--primary-marine-blue);
+    padding-bottom: 1.125rem;
+}
+
+.thankyou-final p{
+    font-size: var(--p16-font-size);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-weight-500);
+    color: var(--neutral-cool-gray);
+    padding-bottom: 0;
+}
