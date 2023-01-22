@@ -102,20 +102,49 @@ height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 
 /* Staring Individual steps styling*/
-.individual-steps{
+.individual-steps-1,.individual-steps-2,.individual-steps-3,.individual-steps-4,.individual-steps-5{
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
-.step1-btn{
+.individual-steps{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+}
+
+.ind-step-1, .ind-step-2,.ind-step-3,.ind-step-4,.ind-step-5,.ind-step-6{
+    position: absolute;
+    background-color: white;
+    display: none;
+}
+.ind-step-1{
+    
+}
+
+.ind-step-2{
+    
+}
+.ind-step-3{
+   
+}
+.ind-step-4{
+    
+}
+.ind-step-5{
+    display: block;
+}
+.step-btn{
    flex-direction: row;
    display: flex;
-   justify-content: right;
+   justify-content: space-between;
 }
 
 /*Side Bar styling*/

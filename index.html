@@ -55,28 +55,23 @@
            </div>
 
           </div>
-          <div class="details">
-            
-            <!--Step 01
+          <form class="details">
            <div class="individual-steps">
-             <h1>Personal info</h1>
-             <p>Please provide your name, email address, and phone number.</p>
-             <form action="" class="step1">
-              <label for="Name" class="name">Name</label><br>
-              <input type="text" name="Name" class="in-name" value="" placeholder="e.g. Stephen King"><br>
-              <label for="Email" class="email">Email</label><br>
-              <input type="email" name="Email" class="in-email" value="" placeholder="e.g. stephenking@lorem.com"><br>
-              <label for="Phone" class="phone">Phone Number</label><br>
-              <input type="email" name="Phone" class="in-phone" value="" placeholder="e.g. +1 234 567 890">
-             </form>
-           </div>
-           <div class="step1-btn">
-             <button type="submit">Next  Step</button>
-           </div>-->
-
-           <!--Step 02
-           <div class="individual-steps">
-            <h1>Select your plan</h1>
+            <div class="ind-step-1">
+              <h1>Personal info</h1>
+              <p>Please provide your name, email address, and phone number.</p>
+              <div action="" class="step1">
+               <label for="Name" class="name">Name</label><br>
+               <input type="text" name="Name" class="in-name" value="" placeholder="e.g. Stephen King"><br>
+               <label for="Email" class="email">Email</label><br>
+               <input type="email" name="Email" class="in-email" value="" placeholder="e.g. stephenking@lorem.com"><br>
+               <label for="Phone" class="phone">Phone Number</label><br>
+               <input type="email" name="Phone" class="in-phone" value="" placeholder="e.g. +1 234 567 890">
+              </div>
+            </div>
+    
+            <div class="ind-step-2">
+              <h1>Select your plan</h1>
             <p>You have the option of monthly or yearly billing.</p>
             <div class="package-selection">
               <div class="packages package-selected">
@@ -115,64 +110,55 @@
               </label>
               <h3>Yearly</h3>
             </div>
-           </div> -->
-
-           <!--Step No 03
-           <div class="individual-steps">
-            <h1>Pick add-ons</h1>
-            <p>Add-ons help enhance your gaming experience.</p>
-            <div class="adons">
-             <div class="addon adon-selected">
-               <input type="checkbox" id="adon-option" name="adon-option-online" value="">
-               <label for="adon-option-online">
-                 <div>
-                   <h2>Online service</h2>
-                   <p>Access to multiplayer games</p>
-                 </div>
-                 <div class="price">
-                   <p>+$1/mo</p>
-                 </div>
-               </label><br>
-             </div>
-        
-             <div class="addon">
-               <input type="checkbox" id="adon-option" name="adon-option-storage" value="">
-               <label for="don-option-storage">
-                 <div>
-                   <h2>Larger storage</h2>
-                   <p>Extra 1TB of cloud save</p>
-                 </div>
-                 <div class="price">
-                   <p>+$2/mo</p>
-                 </div>
-               </label><br>
-             </div>
-        
-             <div class="addon">
-               <input type="checkbox" id="adon-option" name="adon-option-profile" value="">
-               <label for="adon-option-profile">
-                 <div>
-                   <h2>Customizable Profile</h2>
-                   <p>Custom theme on your profile</p>
-                 </div>
-                 <div class="price">
-                   <p>+$2/mo</p>
-                 </div>
-               </label><br>
-             </div>
             </div>
-          </div>
-          <div class="btn-step3">
-           <a> Go Back</a>
-            <button type="submit">Next Step</button>
-          </div>-->
-
-          <!--Step No 04
-          <div class="individual-steps">
-            <h1>Finishing up</h1>
-            <p>Double-check everything looks OK before confirming.</p>
-            <div class="doublecheck-summary">
-              <div class="package-addon-sum">
+            <div class="ind-step-3">
+              <h1>Pick add-ons</h1>
+              <p>Add-ons help enhance your gaming experience.</p>
+              <div class="adons">
+               <div class="addon adon-selected">
+                 <input type="checkbox" id="adon-option" name="adon-option-online" value="">
+                 <label for="adon-option-online">
+                   <div>
+                     <h2>Online service</h2>
+                     <p>Access to multiplayer games</p>
+                   </div>
+                   <div class="price">
+                     <p>+$1/mo</p>
+                   </div>
+                 </label><br>
+               </div>
+          
+               <div class="addon">
+                 <input type="checkbox" id="adon-option" name="adon-option-storage" value="">
+                 <label for="don-option-storage">
+                   <div>
+                     <h2>Larger storage</h2>
+                     <p>Extra 1TB of cloud save</p>
+                   </div>
+                   <div class="price">
+                     <p>+$2/mo</p>
+                   </div>
+                 </label><br>
+               </div>
+          
+               <div class="addon">
+                 <input type="checkbox" id="adon-option" name="adon-option-profile" value="">
+                 <label for="adon-option-profile">
+                   <div>
+                     <h2>Customizable Profile</h2>
+                     <p>Custom theme on your profile</p>
+                   </div>
+                   <div class="price">
+                     <p>+$2/mo</p>
+                   </div>
+                 </label><br>
+               </div>
+              </div>
+            </div>
+            <div class="ind-step-4">
+              <h1>Finishing up</h1>
+              <p>Double-check everything looks OK before confirming.</p>
+              <div class="doublecheck-summary">
                 <div class="sum-package-type">
                   <div>
                      <h2>Arcade(Monthly)</h2>
@@ -182,7 +168,6 @@
                     <p>9$/mo</p>
                   </div>
                 </div>
-                <hr class="hr-pack-sum">
                 <div class="sum-addons">
                   <div>
                     <p>Online Service</p>
@@ -193,29 +178,30 @@
                     <p>+2$/mo</p>
                   </div>
                 </div>
-              </div>
-              <div class="sum-total">
-                <p>Total(per month)</p>
-                <p>+$12/mo</p>
+                <div class="sum-total">
+                  <p>Total(per month)</p>
+                  <p>+$12/mo</p>
+                </div>
               </div>
             </div>
-           </div>
-           <div class="btn-step4">
-            <a> Go Back</a>
-             <button type="submit">Confirm</button>
-           </div>-->
+            <div class="ind-step-5">
+              <div class="thankyou-final">
+                <img src="./assets/images/icon-thank-you.svg" alt=" Thank you for purchasing">
+                <h1>Thank you!</h1>
+                <p>Thanks for confirming your subscription! We hope you have fun 
+                  using our platform. If you ever need support, please feel free 
+                  to email us at support@loremgaming.com.</p>
+              </div>
+            </div>
+            <div class="ind-step-6">
 
-           <!--Final Step-->
-           <div class="individual-steps">
-            <div class="thankyou-final">
-              <img src="./assets/images/icon-thank-you.svg" alt=" Thank you for purchasing">
-              <h1>Thank you!</h1>
-              <p>Thanks for confirming your subscription! We hope you have fun 
-                using our platform. If you ever need support, please feel free 
-                to email us at support@loremgaming.com.</p>
             </div>
            </div>
-          </div>
+           <div class="step-btn">
+             <a> Go Back</a>
+             <button>Next  Step</button>
+           </div>
+          </form>
         </div>
       </div>
     
