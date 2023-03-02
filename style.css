@@ -368,6 +368,14 @@ button:hover{
     color: var(--primary-marine-blue) !important;
 }
 
+.free-yearly-bonus{
+    color: var(--primary-marine-blue) !important;
+    font-size: 0.875rem !important;
+    font-family: var(--font-family-ubuntu);
+    padding-top: 0.25rem !important;
+    padding-bottom: 0 !important;
+    font-weight: var(--font-weight-500) !important;
+}
 
 .switch{
     width: 2.5rem;

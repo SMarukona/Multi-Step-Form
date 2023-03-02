@@ -131,9 +131,9 @@ class Plan{
 }
 
 //Creaing instance for Plans
-const arcade = new Plan(9,90);
-const advanced = new Plan(12,120);
-const pro = new Plan(15,150);
+const arcade = new Plan("9/mo","90/yr");
+const advanced = new Plan("12/mo","120/yr");
+const pro = new Plan("15/mo","150/yr");
 
 console.log(arcade.monthly);
 
@@ -165,14 +165,34 @@ const subscription_plan_type = document.querySelector("input[name=subscription_p
 //grabbing id=monthly and id=yearly
 const monthly = document.querySelector("#monthly");
 const yearly = document.querySelector("#yearly");
+const acade_name = document.querySelector("#arcade_name>h3");
+const advanced_name = document.querySelector("#advanced_name>h3");
+const pro_name = document.querySelector("#pro_name>h3");
+const yearlyBonus = document.querySelectorAll(".free-yearly-bonus");
 
 subscription_plan_type.addEventListener("change", ()=>{
     if(subscription_plan_type.checked){
         yearly.classList.add("monthoryearly-selected");
         monthly.classList.remove("monthoryearly-selected");
+        acade_name.textContent = arcade.yearly;
+        advanced_name.textContent = advanced.yearly;
+        pro_name.textContent = pro.yearly;
+        yearlyBonus[0].style.display = "block";
+        yearlyBonus[1].style.display = "block";
+        yearlyBonus[2].style.display = "block";
+
+    
+        
     }else{
         monthly.classList.add("monthoryearly-selected");
         yearly.classList.remove("monthoryearly-selected");
+        acade_name.textContent = arcade.monthly;
+        advanced_name.textContent = advanced.monthly;
+        pro_name.textContent = pro.monthly;
+        yearlyBonus[0].style.display = "none";
+        yearlyBonus[1].style.display = "none";
+        yearlyBonus[2].style.display = "none";
+        
     }
 });
 
