@@ -81,7 +81,7 @@
                 <h1>Select your plan</h1>
             <p>You have the option of monthly or yearly billing.</p>
             <div class="package-selection">
-              <div class="packages package-selected">
+              <div data-package = "arcade" class="packages">
                 <div class="packages-icon">
                  <img src="assets/images/icon-arcade.svg" alt="Arcade Package" srcset="">
                 </div>
@@ -90,7 +90,7 @@
                  <h3>$9/mo</h3>
                 </div>
               </div>
-              <div class="packages">
+              <div data-package = "advanced" class="packages">
                 <div class="packages-icon">
                  <img src="assets/images/icon-advanced.svg" alt="Advanced Package">
                 </div>
@@ -99,7 +99,7 @@
                  <h3>$12/mo</h3>
                 </div>
               </div>
-              <div class="packages">
+              <div data-package = "pro" class="packages">
                 <div class="packages-icon">
                  <img src="assets/images/icon-pro.svg" alt="Pro Package" srcset="">
                 </div>
@@ -110,12 +110,12 @@
               </div>
             </div>
             <div class="monthoryearly">
-              <h3 class = "monthoryearly-selected">Monthly</h3>
+              <h3 id="monthly">Monthly</h3>
               <label class="switch">
-                <input type="checkbox" checked>
+                <input type="checkbox" name="subscription_plan_type" checked>
                 <span class="slider round"></span>
               </label>
-              <h3>Yearly</h3>
+              <h3 id="yearly">Yearly</h3>
             </div>
               </div>
               <div class="step-btn">

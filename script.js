@@ -120,3 +120,59 @@ const form = document.querySelector(".details");
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
 });
+
+
+//Creating class for monthly and yearly plan
+class Plan{
+    constructor(monthly, yearly){
+    this.monthly = monthly;
+    this.yearly = yearly;
+}
+}
+
+//Creaing instance for Plans
+const arcade = new Plan(9,90);
+const advanced = new Plan(12,120);
+const pro = new Plan(15,150);
+
+console.log(arcade.monthly);
+
+
+//Grabbing packages elements
+const packages = document.querySelectorAll(".packages");
+
+
+packages.forEach(function(package, index) {
+    package.addEventListener('click', function() {
+      // Remove highlight from all subscription plan div boxes
+      packages.forEach(function(elem) {
+        elem.classList.remove('package-selected');
+      });
+    
+      // Highlight clicked subscription plan div box
+      package.classList.add('package-selected');
+      //Getting data-package atrribute form selected package
+        let selected_plan = package.getAttribute("data-package");
+        console.log(selected_plan);
+    });
+  });
+
+//Changing package prices according monthly and yearly plan
+//Selecting checkbox name called subscription_plan_type
+const subscription_plan_type = document.querySelector("input[name=subscription_plan_type]");
+//consoling checkbox value toogle
+
+//grabbing id=monthly and id=yearly
+const monthly = document.querySelector("#monthly");
+const yearly = document.querySelector("#yearly");
+
+subscription_plan_type.addEventListener("change", ()=>{
+    if(subscription_plan_type.checked){
+        yearly.classList.add("monthoryearly-selected");
+        monthly.classList.remove("monthoryearly-selected");
+    }else{
+        monthly.classList.add("monthoryearly-selected");
+        yearly.classList.remove("monthoryearly-selected");
+    }
+});
+
