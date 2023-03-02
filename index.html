@@ -58,20 +58,27 @@
           <form class="details">
            <div class="individual-steps">
             <div class="ind-step-1">
-              <h1>Personal info</h1>
-              <p>Please provide your name, email address, and phone number.</p>
-              <div action="" class="step1">
-               <label for="Name" class="name">Name</label><br>
-               <input type="text" name="Name" class="in-name" value="" placeholder="e.g. Stephen King"><br>
-               <label for="Email" class="email">Email</label><br>
-               <input type="email" name="Email" class="in-email" value="" placeholder="e.g. stephenking@lorem.com"><br>
-               <label for="Phone" class="phone">Phone Number</label><br>
-               <input type="email" name="Phone" class="in-phone" value="" placeholder="e.g. +1 234 567 890">
+              <div class="step-content">
+                <h1>Personal info</h1>
+                <p>Please provide your name, email address, and phone number.</p>
+                <div action="" class="step1">
+                 <label for="Name" class="name">Name</label><br>
+                 <input type="text" name="Name" class="in-name" value="" placeholder="e.g. Stephen King"><br>
+                 <label for="Email" class="email">Email</label><br>
+                 <input type="email" name="Email" class="in-email" value="" placeholder="e.g. stephenking@lorem.com"><br>
+                 <label for="Phone" class="phone">Phone Number</label><br>
+                 <input type="email" name="Phone" class="in-phone" value="" placeholder="e.g. +1 234 567 890">
+                </div>
+              </div>
+              <div class="step-btn">
+                <a step_no = "1"> Go Back</a>
+                <button step_no = "1" type="button">Next  Step</button>
               </div>
             </div>
     
             <div class="ind-step-2">
-              <h1>Select your plan</h1>
+              <div class="step-content">
+                <h1>Select your plan</h1>
             <p>You have the option of monthly or yearly billing.</p>
             <div class="package-selection">
               <div class="packages package-selected">
@@ -110,9 +117,15 @@
               </label>
               <h3>Yearly</h3>
             </div>
+              </div>
+              <div class="step-btn">
+                <a step_no = "2"> Go Back</a>
+                <button step_no = "2" type="button">Next  Step</button>
+              </div>
             </div>
             <div class="ind-step-3">
-              <h1>Pick add-ons</h1>
+              <div class="step-content">
+                <h1>Pick add-ons</h1>
               <p>Add-ons help enhance your gaming experience.</p>
               <div class="adons">
                <div class="addon adon-selected">
@@ -154,9 +167,15 @@
                  </label><br>
                </div>
               </div>
+              </div>
+              <div class="step-btn">
+                <a step_no = "3"> Go Back</a>
+                <button step_no = "3" type="button">Next  Step</button>
+              </div>
             </div>
             <div class="ind-step-4">
-              <h1>Finishing up</h1>
+              <div class="step-content">
+                <h1>Finishing up</h1>
               <p>Double-check everything looks OK before confirming.</p>
               <div class="doublecheck-summary">
                 <div class="sum-package-type">
@@ -183,28 +202,35 @@
                   <p>+$12/mo</p>
                 </div>
               </div>
-            </div>
-            <div class="ind-step-5">
-              <div class="thankyou-final">
-                <img src="./assets/images/icon-thank-you.svg" alt=" Thank you for purchasing">
-                <h1>Thank you!</h1>
-                <p>Thanks for confirming your subscription! We hope you have fun 
-                  using our platform. If you ever need support, please feel free 
-                  to email us at support@loremgaming.com.</p>
+              </div>
+              <div class="step-btn">
+                <a step_no = "4"> Go Back</a>
+                <button step_no = "4" type="button">Next  Step</button>
               </div>
             </div>
-            <div class="ind-step-6">
-
+            <div class="ind-step-5">
+              <div class="step-content">
+                <div class="thankyou-final">
+                  <img src="./assets/images/icon-thank-you.svg" alt=" Thank you for purchasing">
+                  <h1>Thank you!</h1>
+                  <p>Thanks for confirming your subscription! We hope you have fun 
+                    using our platform. If you ever need support, please feel free 
+                    to email us at support@loremgaming.com.</p>
+                </div>
+              </div>
+              <div class="step-btn">
+                <a step_no = "5"> Go Back</a>
+                <button step_no = "5" type="button">Next  Step</button>
+              </div>
             </div>
-           </div>
-           <div class="step-btn">
-             <a> Go Back</a>
-             <button>Next  Step</button>
+            
            </div>
           </form>
         </div>
       </div>
     
   </main>
+<script type="text/javascript" src="script.js">
+</script>
 </body>
 </html>

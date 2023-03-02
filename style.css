@@ -126,7 +126,7 @@ height: 100%;
     display: none;
 }
 .ind-step-1{
-    
+    display: block;
 }
 
 .ind-step-2{
@@ -139,14 +139,21 @@ height: 100%;
     
 }
 .ind-step-5{
-    display: block;
+    
 }
 .step-btn{
-   flex-direction: row;
-   display: flex;
-   justify-content: space-between;
+   display: inline-block;
+
+   
 }
 
+.step-btn a{
+    float: left;
+    cursor: pointer;
+}
+.step-btn button{
+    float: right;
+}
 /*Side Bar styling*/
 
 .step-number{
