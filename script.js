@@ -45,6 +45,7 @@ function nextStep(item, index){
             backBtn[2].style.display = "inline-block";
             //setting nextBtn[3] button type to submit
             nextBtn[3].type = "submit";
+            nextBtn[3].textContent = "confirm";
 
             steps_number[1].classList.remove("step-number-active");
             steps_number_a[1].classList.remove("step-number-active-a");
@@ -131,9 +132,14 @@ class Plan{
 }
 
 //Creaing instance for Plans
-const arcade = new Plan("9/mo","90/yr");
-const advanced = new Plan("12/mo","120/yr");
-const pro = new Plan("15/mo","150/yr");
+const arcade = new Plan("$9/mo","$90/yr");
+const advanced = new Plan("$12/mo","$120/yr");
+const pro = new Plan("$15/mo","$150/yr");
+
+//Adding addons to plans
+const online_services = new Plan("+$1/mo","+$10/yr");
+const larger_storage = new Plan("+$2/mo","+$20/yr");
+const customizable_profile = new Plan("+$2/mo","+$20/yr");
 
 console.log(arcade.monthly);
 
@@ -169,6 +175,10 @@ const acade_name = document.querySelector("#arcade_name>h3");
 const advanced_name = document.querySelector("#advanced_name>h3");
 const pro_name = document.querySelector("#pro_name>h3");
 const yearlyBonus = document.querySelectorAll(".free-yearly-bonus");
+const online_services_update = document.querySelector("#online_services>p");
+const larger_storage_update = document.querySelector("#large_storage>p");
+const customizable_profile_update = document.querySelector("#customizable_profile>p");
+
 
 subscription_plan_type.addEventListener("change", ()=>{
     if(subscription_plan_type.checked){
@@ -177,6 +187,12 @@ subscription_plan_type.addEventListener("change", ()=>{
         acade_name.textContent = arcade.yearly;
         advanced_name.textContent = advanced.yearly;
         pro_name.textContent = pro.yearly;
+
+        //Changing addon prices dynamically
+        online_services_update.textContent = online_services.yearly;
+        larger_storage_update.textContent = larger_storage.yearly;
+        customizable_profile_update.textContent = customizable_profile.yearly;
+
         yearlyBonus[0].style.display = "block";
         yearlyBonus[1].style.display = "block";
         yearlyBonus[2].style.display = "block";
@@ -189,6 +205,12 @@ subscription_plan_type.addEventListener("change", ()=>{
         acade_name.textContent = arcade.monthly;
         advanced_name.textContent = advanced.monthly;
         pro_name.textContent = pro.monthly;
+
+        //changing addon prices dynamically
+        online_services_update.textContent = online_services.monthly;
+        larger_storage_update.textContent = larger_storage.monthly;
+        customizable_profile_update.textContent = customizable_profile.monthly;
+
         yearlyBonus[0].style.display = "none";
         yearlyBonus[1].style.display = "none";
         yearlyBonus[2].style.display = "none";
