@@ -81,7 +81,7 @@
                 <h1>Select your plan</h1>
             <p>You have the option of monthly or yearly billing.</p>
             <div class="package-selection">
-              <div data-package = "arcade" class="packages">
+              <div data-package = "arcade" class="packages package-selected">
                 <div class="packages-icon">
                  <img src="assets/images/icon-arcade.svg" alt="Arcade Package" srcset="">
                 </div>
@@ -132,7 +132,7 @@
               <p>Add-ons help enhance your gaming experience.</p>
               <div class="adons">
                <div class="addon adon-selected">
-                 <input type="checkbox" id="adon-option" name="adon-option-online" value="">
+                 <input type="checkbox" id="adon-option" name="adon-option-online" value="" checked>
                  <label for="adon-option-online">
                    <div>
                      <h2>Online service</h2>
@@ -181,6 +181,7 @@
                 <h1>Finishing up</h1>
               <p>Double-check everything looks OK before confirming.</p>
               <div class="doublecheck-summary">
+                <div class="total-selection-packages">
                 <div class="sum-package-type">
                   <div>
                      <h2>Arcade(Monthly)</h2>
@@ -200,6 +201,7 @@
                     <p>+2$/mo</p>
                   </div>
                 </div>
+              </div>
                 <div class="sum-total">
                   <p>Total(per month)</p>
                   <p>+$12/mo</p>

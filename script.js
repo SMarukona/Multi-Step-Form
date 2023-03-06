@@ -196,9 +196,6 @@ subscription_plan_type.addEventListener("change", ()=>{
         yearlyBonus[0].style.display = "block";
         yearlyBonus[1].style.display = "block";
         yearlyBonus[2].style.display = "block";
-
-    
-        
     }else{
         monthly.classList.add("monthoryearly-selected");
         yearly.classList.remove("monthoryearly-selected");
@@ -214,7 +211,6 @@ subscription_plan_type.addEventListener("change", ()=>{
         yearlyBonus[0].style.display = "none";
         yearlyBonus[1].style.display = "none";
         yearlyBonus[2].style.display = "none";
-        
     }
 });
 

@@ -33,7 +33,7 @@ ul,ol,li{
     --primary-pastel-blue: hsl(228, 100%, 84%);
     --primary-light-blue: hsl(206, 94%, 87%);
     --primary-strawberry-red: hsl(354, 84%, 57%);
-    --neutral-cool-gray: hsl(231, 11%, 63%);
+    --neutral-cool-gray: rgb(150, 153, 171);
     --neutral-light-gray: hsl(229, 24%, 87%);
     --neutral-magnolia: hsl(217, 100%, 97%);
     --neutral-alabaster: hsl(231, 100%, 99%);
@@ -167,6 +167,7 @@ height: 100%;
 .step-btn a{
     float: left;
     cursor: pointer;
+    vertical-align: middle;
 }
 .step-btn button{
     float: right;
@@ -582,6 +583,14 @@ input:checked + .slider:before {
     margin-top: 0.4rem;
 }
 
+.total-selection-packages{
+    background-color: var(--neutral-alabaster);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 .sum-package-type div h2{
     font-size: var(--h2-font-size);
     font-family: var(--font-family-ubuntu);
@@ -650,7 +659,7 @@ input:checked + .slider:before {
     font-size: 1.2rem;
     font-family: var(--font-family-ubuntu);
     font-weight: var(--font-weight-700);
-    color: var(--primary-marine-blue);
+    color: var(--primary-purplish-blue);
     padding-bottom: 0;
 }
 
